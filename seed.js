@@ -11,7 +11,7 @@
 // CATALOG_VERSION: subir para re-sembrar en el servidor.
 // ============================================================
 
-const CATALOG_VERSION = 2;
+const CATALOG_VERSION = 3;
 
 const SEED_CATALOG = {
   departments: [
@@ -39,21 +39,21 @@ const SEED_CATALOG = {
     },
     {
       id: "specialty",
-      name: "Specialty Flavors",
+      name: "This Week's Lineup",
       icon: "✨",
-      iconImg: "rolls-oreo-box.jpg",
+      iconImg: "rolls-lineup.jpg",
       categories: [
         {
           id: "specialty-rolls",
-          name: "Flavors of the week — Oreo or Brown Butter",
+          name: "Original · Brown Butter · Blueberry Lemon",
           items: [
             { id: "specialty-4", name: "Specialty — 4 Rolls", price: 36.00, unit: "box", active: true, image: "rolls-oreo-box.jpg",
-              desc: "4 rolls of the week's flavor (Oreo or Brown Butter). Mix & match available." },
+              desc: "4 rolls from this week's lineup — Original, Brown Butter, Blueberry Lemon. Mix & match available." },
             { id: "specialty-6", name: "Specialty — 6 Rolls", price: 50.00, unit: "box", active: true, image: "rolls-oreo-hands.jpg",
               tag: "Most ordered",
-              desc: "6 specialty rolls — the repeat favorite. Oreo or Brown Butter, mix & match available." },
+              desc: "6 rolls from this week's lineup — the repeat favorite. Original, Brown Butter, Blueberry Lemon. Mix & match." },
             { id: "specialty-12", name: "Specialty — 12 Rolls", price: 90.00, unit: "box", active: true, image: "rolls-cake.jpg",
-              desc: "12 rolls of the week's specialty flavor. For the serious ones." }
+              desc: "12 rolls from this week's lineup. Original, Brown Butter, Blueberry Lemon. For the serious ones." }
           ]
         }
       ]
