@@ -207,9 +207,11 @@ app.patch("/api/orders/:id", requireStore, async (req, res) => {
 
 // ---------------- Páginas ----------------
 app.use(express.static(path.join(__dirname, "public")));
-app.get("/tienda", (req, res) => {
+app.get("/store", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "tienda.html"));
 });
+// Legacy alias: /tienda redirects to /store
+app.get("/tienda", (req, res) => res.redirect(301, "/store"));
 
 // ---------------- Arranque ----------------
 db.init().then(() => {
