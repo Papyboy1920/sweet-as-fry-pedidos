@@ -3,7 +3,7 @@
 # Crea el servicio web + Postgres gratis.
 services:
   - type: web
-    name: sweet-as-fry-pedidos
+    name: sweet-as-fry-orders
     runtime: node
     plan: free
     buildCommand: npm install
