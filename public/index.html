@@ -109,7 +109,7 @@
     <img src="images/logo.png" alt="Sweet As Fry" style="width:64px;height:64px;border-radius:50%;object-fit:cover;box-shadow:0 2px 10px rgba(0,0,0,.4);border:2px solid var(--gold)">
     <div>
       <h1>🧁 Sweet <span>As Fry</span></h1>
-      <p>Small-batch cinnamon rolls — hechos con amor en Kendall 🧡<br>📍 Pickup en Kendall · 📸 @sweet_as_fry<br>🕐 Pickup: miércoles y sábado · 12:00 PM – 8:00 PM</p>
+      <p>Small-batch cinnamon rolls — baked with love in Kendall 🧡<br>📍 Pickup in Kendall · 📸 @sweet_as_fry<br>🕐 Pickup: Wednesday & Saturday · 12:00 PM – 8:00 PM</p>
     </div>
   </div>
 </header>
@@ -118,25 +118,25 @@
 <main>
   <!-- PASO 1: tipo -->
   <section class="step on" id="s1">
-    <h2>¿Cómo quieres tu pedido?</h2>
+    <h2>How do you want your order?</h2>
     <div class="opt2">
       <div class="type-card" id="tc-delivery" onclick="setType('delivery')">
         <div class="ic">🛵</div><div class="t">Delivery</div><div class="s">$8 — Kendall, South Miami, Pinecrest, Coconut Grove, West Miami</div>
       </div>
       <div class="type-card" id="tc-pickup" onclick="setType('pickup')">
-        <div class="ic">🏪</div><div class="t">Recoger</div><div class="s">Miércoles y sábado · 12pm–8pm en Kendall</div>
+        <div class="ic">🏪</div><div class="t">Pickup</div><div class="s">Wednesday & Saturday · 12pm–8pm in Kendall</div>
       </div>
     </div>
-    <div class="note-box" style="margin-top:14px">🧁 <b>Small batch, preorders semanales.</b><br>Solo 25 órdenes por drop — tu orden se confirma con el pago. 💌</div>
+    <div class="note-box" style="margin-top:14px">🧁 <b>Small batch, weekly preorders.</b><br>Only 25 orders per drop — your order is confirmed with payment. 💌</div>
   </section>
 
   <!-- PASO 2: catálogo -->
   <section class="step" id="s2">
-    <button class="back" onclick="go(1)">← Atrás</button>
-    <h2 id="dept-title">Elige un departamento</h2>
+    <button class="back" onclick="go(1)">← Back</button>
+    <h2 id="dept-title">Choose a department</h2>
     <div class="dept-grid" id="dept-grid"></div>
     <div id="cat-view" style="display:none">
-      <button class="back" onclick="showDepts()">← Departamentos</button>
+      <button class="back" onclick="showDepts()">← Departments</button>
       <h2 id="cat-title"></h2>
       <div class="chips" id="cat-chips"></div>
       <div id="items"></div>
@@ -145,37 +145,37 @@
 
   <!-- PASO 3: datos -->
   <section class="step" id="s3">
-    <button class="back" onclick="go(2)">← Atrás</button>
-    <h2>Tus datos</h2>
+    <button class="back" onclick="go(2)">← Back</button>
+    <h2>Your info</h2>
     <div class="err" id="e3"></div>
-    <label class="f">Nombre completo *</label>
-    <input class="f" id="f-name" placeholder="Ej: María Pérez" autocomplete="name">
-    <label class="f">Teléfono *</label>
+    <label class="f">Full name *</label>
+    <input class="f" id="f-name" placeholder="Ex: Jane Smith" autocomplete="name">
+    <label class="f">Phone *</label>
     <input class="f" id="f-phone" placeholder="Ej: 305-555-1234" inputmode="tel" autocomplete="tel">
     <div id="addr-wrap">
-      <label class="f">Dirección de entrega *</label>
-      <textarea class="f" id="f-addr" rows="2" placeholder="Calle, número, apartamento, referencia"></textarea>
+      <label class="f">Delivery address *</label>
+      <textarea class="f" id="f-addr" rows="2" placeholder="Street, number, apartment, notes"></textarea>
     </div>
-    <label class="f">Nota para la tienda (opcional)</label>
-    <textarea class="f" id="f-notes" rows="2" placeholder="Fecha de recogida o entrega: ej. sábado 26 a las 3pm…"></textarea>
+    <label class="f">Note for the store (optional)</label>
+    <textarea class="f" id="f-notes" rows="2" placeholder="Pickup or delivery date: ex. Saturday 26th at 3pm…"></textarea>
   </section>
 
   <!-- PASO 4: pago -->
   <section class="step" id="s4">
-    <button class="back" onclick="go(3)">← Atrás</button>
-    <h2>¿Cómo pagas?</h2>
+    <button class="back" onclick="go(3)">← Back</button>
+    <h2>How do you want to pay?</h2>
     <div class="pay-card" id="pc-cash" onclick="setPay('cash')">
-      <div class="ic">💵</div><div><div class="t">Efectivo</div><div class="s">Pagas al recibir tu pedido</div></div>
+      <div class="ic">💵</div><div><div class="t">Cash</div><div class="s">Pay when you receive your order</div></div>
     </div>
     <div class="pay-card" id="pc-transfer" onclick="setPay('transfer')">
-      <div class="ic">📱</div><div><div class="t">Zelle</div><div class="s">Paga por Zelle al confirmar</div></div>
+      <div class="ic">📱</div><div><div class="t">Zelle</div><div class="s">Pay with Zelle at checkout</div></div>
     </div>
   </section>
 
   <!-- PASO 5: revisar -->
   <section class="step" id="s5">
-    <button class="back" onclick="go(4)">← Atrás</button>
-    <h2>Revisa tu pedido</h2>
+    <button class="back" onclick="go(4)">← Back</button>
+    <h2>Review your order</h2>
     <div class="err" id="e5"></div>
     <div class="sum" id="review"></div>
   </section>
@@ -184,30 +184,30 @@
   <section class="step" id="s6">
     <div class="ok-box">
       <div class="big">✅</div>
-      <h2 id="ok-title">¡Pedido recibido!</h2>
-      <div>Tu número de pedido es</div>
+      <h2 id="ok-title">Order received!</h2>
+      <div>Your order number is</div>
       <div class="ok-num" id="ok-num">#000</div>
       <div class="sum" id="ok-sum" style="text-align:left"></div>
       <div class="note-box">
-        <b>¿Qué sigue?</b><br>
-        • Sweet As Fry está preparando tu pedido ahora mismo.<br>
-        • Te llamaremos a tu teléfono para confirmar.<br>
-        • <span id="ok-next">Pagas al recibir.</span><br>
-        • Guarda tu número de pedido: <b id="ok-num2">#000</b>
+        <b>What happens next?</b><br>
+        • Sweet As Fry is getting your order ready right now.<br>
+        • We'll call your phone to confirm.<br>
+        • <span id="ok-next">Pay on receipt.</span><br>
+        • Save your order number: <b id="ok-num2">#000</b>
       </div>
-      <div id="ok-pend" style="display:none; font-weight:700; color:#7a5b00; margin-top:10px">⏳ Estamos esperando tu pago — la tienda lo confirma al recibirlo. 💸</div>
-      <button class="btn btn-p" style="width:100%; margin-top:16px" onclick="location.reload()">Hacer otro pedido</button>
+      <div id="ok-pend" style="display:none; font-weight:700; color:#7a5b00; margin-top:10px">⏳ We're waiting for your payment — the store confirms it once received. 💸</div>
+      <button class="btn btn-p" style="width:100%; margin-top:16px" onclick="location.reload()">Place another order</button>
     </div>
   </section>
 
-  <div class="seed-tag">Precios en US$. Todos los precios incluyen sales tax. Orgullosamente dominicanos. 🇩🇴</div>
+  <div class="seed-tag">Prices in US$. Made fresh in Kendall, Miami 🧁</div>
 </main>
 
 <div class="bar" id="bar" style="display:none">
   <div class="in">
-    <div class="total"><div class="l" id="bar-count">0 artículos</div><div class="v" id="bar-total">$0.00</div></div>
-    <button class="btn btn-g" id="bar-back" onclick="barBack()">Atrás</button>
-    <button class="btn btn-p" id="bar-next" onclick="barNext()">Continuar →</button>
+    <div class="total"><div class="l" id="bar-count">0 items</div><div class="v" id="bar-total">$0.00</div></div>
+    <button class="btn btn-g" id="bar-back" onclick="barBack()">Back</button>
+    <button class="btn btn-p" id="bar-next" onclick="barNext()">Continue →</button>
   </div>
 </div>
 
@@ -297,7 +297,7 @@ function renderItems() {
         ${it.image ? `<img class="item-img" src="images/${esc(it.image)}" alt="${esc(it.name)}" loading="lazy">` : ""}
         <div class="row1"><div class="nm">${esc(it.name)}</div><div class="pr">${fmt(it.price)} <small>/${esc(it.unit)}</small></div></div>
         ${it.tag ? `<div><span class="tag">${esc(it.tag)}</span></div>` : ""}
-        ${it.pending ? `<div><span class="tag pending">⚠️ ${esc(it.note || "Precio por confirmar")}</span></div>` : ""}
+        ${it.pending ? `<div><span class="tag pending">⚠️ ${esc(it.note || "Price to confirm")}</span></div>` : ""}
         ${it.desc ? `<div class="desc">${esc(it.desc)}</div>` : ""}
         <div class="dtap">Toca para ver detalle 👆</div>
       </div>
@@ -306,7 +306,7 @@ function renderItems() {
         <div class="n">${c.qty}</div>
         <button onclick="chQty('${it.id}',1)">+</button>
       </div>
-      ${c.qty > 0 ? `<input class="inote" placeholder="Nota (opcional): ej. sin cebolla" value="${(c.note || "").replace(/"/g, "&quot;")}" oninput="setNote('${it.id}', this.value)">` : ""}
+      ${c.qty > 0 ? `<input class="inote" placeholder="Note (optional): ex. extra glaze" value="${(c.note || "").replace(/"/g, "&quot;")}" oninput="setNote('${it.id}', this.value)">` : ""}
     </div>`;
   }).join("");
 }
@@ -346,11 +346,11 @@ function updateBar() {
   const show = (step === 2 || step === 3 || step === 4) ;
   $("bar").style.display = show ? "block" : "none";
   if (!show) return;
-  $("bar-count").textContent = cartCount() + (cartCount() === 1 ? " artículo" : " artículos");
+  $("bar-count").textContent = cartCount() + (cartCount() === 1 ? " item" : " items");
   $("bar-total").textContent = fmt(cartTotal());
   $("bar-next").disabled = cartCount() === 0;
   $("bar-back").style.display = step === 2 ? "none" : "inline-block";
-  $("bar-next").textContent = step === 2 ? "Continuar →" : step === 3 ? "Ir a pagar →" : "Revisar →";
+  $("bar-next").textContent = step === 2 ? "Continue →" : step === 3 ? "Ir a pagar →" : "Revisar →";
 }
 function barBack() { if (step > 2) go(step - 1); }
 function barNext() {
@@ -359,13 +359,13 @@ function barNext() {
   else if (step === 3) {
     const name = $("f-name").value.trim(), phone = $("f-phone").value.trim(), addr = $("f-addr").value.trim();
     const e = $("e3");
-    if (!name || !phone) { e.style.display = "block"; e.textContent = "Escribe tu nombre y tu teléfono."; return; }
-    if (orderType === "delivery" && !addr) { e.style.display = "block"; e.textContent = "Escribe tu dirección de entrega."; return; }
+    if (!name || !phone) { e.style.display = "block"; e.textContent = "Enter your name and phone."; return; }
+    if (orderType === "delivery" && !addr) { e.style.display = "block"; e.textContent = "Enter your delivery address."; return; }
     e.style.display = "none";
     go(4);
   }
   else if (step === 4) {
-    if (!payMethod) { alert("Elige cómo quieres pagar."); return; }
+    if (!payMethod) { alert("Choose how you want to pay."); return; }
     go(5);
   }
 }
@@ -379,27 +379,27 @@ function renderReview() {
       `<div class="ln"><span><b>${orderType === "delivery" ? "🛵 Delivery" : "🏪 Recoger"}</b></span><span>${payMethod === "cash" ? "💵 Efectivo" : "📱 Zelle"}</span></div>` +
       `<div style="text-align:center;padding:26px 12px">` +
       `<div style="font-size:44px">👑</div>` +
-      `<div style="font-weight:700;font-size:16px;margin:8px 0 4px">Tu carrito está vacío</div>` +
-      `<div style="font-size:13px;color:var(--mut)">Quitaste todos los artículos — vuelve al menú para agregar algo de Sweet As Fry.</div>` +
+      `<div style="font-weight:700;font-size:16px;margin:8px 0 4px">Your cart is empty</div>` +
+      `<div style="font-size:13px;color:var(--mut)">You removed everything — head back to the menu to add something from Sweet As Fry.</div>` +
       `<button class="btn btn-p" style="margin-top:14px" onclick="go(2)">← Volver al menú</button></div>`;
     return;
   }
   const zBox = isZelle ? `
     <div class="zelle-pay">
       <div class="zp-t">💸 Paga tu pedido por Zelle</div>
-      <div>Envía el <b>total de tu pedido</b> a:</div>
+      <div>Send your <b>order total</b> to:</div>
       <div class="zp-handle">${zelleHandle ? String(zelleHandle).replace(/</g, "&lt;") : "—"}</div>
-      ${zelleHandle ? "" : `<div class="zp-note">La tienda te compartirá su Zelle al llamarte para confirmar.</div>`}
-      <div class="zp-note">Después de pagar, toca el botón para enviar tu pedido.</div>
+      ${zelleHandle ? "" : `<div class="zp-note">The store will share their Zelle when they call to confirm.</div>`}
+      <div class="zp-note">After paying, tap the button to send your order.</div>
     </div>` : "";
   $("review").innerHTML =
     `<div class="ln"><span><b>${orderType === "delivery" ? "🛵 Delivery" : "🏪 Recoger"}</b></span><span>${payMethod === "cash" ? "💵 Efectivo" : "📱 Zelle"}</span></div>` +
     zBox +
     lines.map(l => `<div class="ln rev-ln"><span class="rev-info"><span class="nm">${esc(l.name)}</span>${l.note ? `<br><small style="color:#6b6b6b">📝 ${esc(l.note)}</small>` : ""}</span><span class="rev-step"><button onclick="revQty('${l.itemId}',-1)" aria-label="Quitar uno">−</button><span class="n">${l.qty}</span><button onclick="revQty('${l.itemId}',1)" aria-label="Agregar uno">+</button><button class="rev-del" onclick="revDel('${l.itemId}')" title="Quitar del pedido">🗑️</button></span><span class="rev-sub">${fmt(l.subtotal)}</span></div>`).join("") +
     `<div class="tot"><span>Total</span><span>${fmt(cartTotal())}</span></div>
-     <button class="btn btn-p" style="width:100%; margin-top:14px" onclick="submitOrder()">${isZelle ? "✅ Ya envié el pago" : "✅ Confirmar pedido"}</button>
+     <button class="btn btn-p" style="width:100%; margin-top:14px" onclick="submitOrder()">${isZelle ? "✅ I've sent the payment" : "✅ Confirmar pedido"}</button>
      ${isZelle ? `<a class="zp-change" onclick="go(4)">← cambiar método de pago</a>` : ""}
-     <div style="font-size:12px; color:#6b6b6b; margin-top:10px">${isZelle ? "Al tocar el botón, tu pedido llega a la tienda como pendiente de pago — lo confirman al recibir tu Zelle." : "Al confirmar, Sweet As Fry recibe tu pedido al instante y te llama para confirmarlo."}</div>`;
+     <div style="font-size:12px; color:#6b6b6b; margin-top:10px">${isZelle ? "When you tap the button, your order reaches the store as payment-pending — they confirm it once your Zelle arrives." : "When you confirm, Sweet As Fry gets your order instantly and calls you to confirm."}</div>`;
 }
 async function submitOrder() {
   const btn = document.querySelector("#review .btn");
@@ -421,11 +421,11 @@ async function submitOrder() {
     if (payMethod === "transfer") {
       $("ok-next").textContent = zelleHandle
         ? `Envía el total de tu pedido por Zelle a: ${zelleHandle}`
-        : "La tienda te compartirá su Zelle al llamarte para confirmar.";
-      $("ok-title").textContent = "⏳ ¡Pedido recibido!";
+        : "The store will share their Zelle when they call to confirm.";
+      $("ok-title").textContent = "⏳ Order received!";
       $("ok-pend").style.display = "block";
     } else {
-      $("ok-title").textContent = "¡Pedido recibido!";
+      $("ok-title").textContent = "Order received!";
       $("ok-pend").style.display = "none";
       $("ok-next").textContent = orderType === "delivery"
         ? "Pagas en efectivo al recibir."
@@ -453,15 +453,15 @@ load();
       <div class="d-name" id="d-name"></div>
       <div class="d-price" id="d-price"></div>
       <div id="d-pend"></div>
-      <div class="d-sec">Qué trae</div>
+      <div class="d-sec">What's inside</div>
       <div class="d-desc" id="d-desc"></div>
       <div class="d-qtyrow">
         <button onclick="dQty(-1)">−</button>
         <div class="d-qty" id="d-qty">0</div>
         <button onclick="dQty(1)">+</button>
       </div>
-      <input class="d-note" id="d-note" placeholder="Nota (opcional): ej. sin cebolla" oninput="dNote(this.value)">
-      <button class="d-add" onclick="closeDetail()">Agregar al pedido ✓</button>
+      <input class="d-note" id="d-note" placeholder="Note (optional): ex. extra glaze" oninput="dNote(this.value)">
+      <button class="d-add" onclick="closeDetail()">Add to order ✓</button>
     </div>
   </div>
 </div>
@@ -476,7 +476,7 @@ function openDetail(id) {
   $("d-tag").innerHTML = it.tag ? `<div><span class="tag">${esc(it.tag)}</span></div>` : "";
   $("d-name").textContent = it.name;
   $("d-price").innerHTML = fmt(it.price) + " <small>/" + esc(it.unit) + "</small>";
-  $("d-pend").innerHTML = it.pending ? `<div><span class="tag pending">⚠️ ${esc(it.note || "Precio por confirmar")}</span></div>` : "";
+  $("d-pend").innerHTML = it.pending ? `<div><span class="tag pending">⚠️ ${esc(it.note || "Price to confirm")}</span></div>` : "";
   $("d-desc").textContent = it.desc || "Pregunta en la tienda por los detalles de este producto.";
   refreshDetail();
   $("d-ov").classList.add("on");
